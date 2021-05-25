@@ -1,6 +1,6 @@
 # ib-gateway-docker-headless
 
-[![Docker](https://github.com/mfrener/ib-gateway-docker-headless/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/mfrener/ib-gateway-docker-headless/actions/workflows/docker-publish.yml)
+[![Docker](https://github.com/HMB-research/ib-gateway-docker-headless/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/HMB-research/ib-gateway-docker-headless/actions/workflows/docker-publish.yml)
 
 IB Gateway + IbcAlpha + Xvfb on a Docker Container.
 

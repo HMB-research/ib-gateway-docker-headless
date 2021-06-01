@@ -7,7 +7,7 @@ IB Gateway + IbcAlpha + Xvfb on a Docker Container.
 Get it:
 ```
 docker login -u $GITHUB_USERNAME -p $GITHUB_TOKEN docker.pkg.github.com
-docker pull docker.pkg.github.com/mfrener/ib-gateway-docker-headless/ib-gateway:latest
+docker pull docker.pkg.github.com/hmb-research/ib-gateway-docker-headless/ib-gateway:latest
 ```
 
 Run it:

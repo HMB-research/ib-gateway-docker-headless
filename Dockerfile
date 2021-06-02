@@ -7,10 +7,10 @@ RUN apt-get clean
 
 # Install IB Gateway
 
-WORKDIR /opt/Jts/984
+WORKDIR /opt/Jts/981
 RUN wget https://download2.interactivebrokers.com/installers/tws/latest-standalone/tws-latest-standalone-linux-x64.sh --no-check-certificate
 RUN chmod a+x tws-latest-standalone-linux-x64.sh
-RUN ./tws-latest-standalone-linux-x64.sh -q -dir /opt/Jts/984
+RUN ./tws-latest-standalone-linux-x64.sh -q -dir /opt/Jts/981
 RUN rm ./tws-latest-standalone-linux-x64.sh
 
 # Install IbcAlpha
@@ -21,7 +21,7 @@ RUN unzip ./IBCLinux-3.8.5.zip -d .
 COPY ./config/ibc/* .
 RUN chmod -R u+x *.sh && chmod -R u+x scripts/*.sh
 RUN rm ./IBCLinux-3.8.5.zip
-ENV TWS_MAJOR_VRSN 984
+ENV TWS_MAJOR_VRSN 981
 ENV TWS_PATH /opt/Jts
 ENV IBC_PATH /opt/ibc
 ENV IBC_INI /opt/ibc/config.ini

@@ -10,6 +10,8 @@ services:
       TWS_USERID: ${TWS_USERID}
       TWS_PASSWORD: ${TWS_PASSWORD}
       TRADING_MODE: ${TRADING_MODE:-paper}
+      TWS_PATH: /root/Jtsxw
+    commant: /root/run.sh
     ports:
       - 4003:4003
       - 4004:4004

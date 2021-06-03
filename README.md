@@ -2,13 +2,9 @@
 
 [![Docker](https://github.com/HMB-research/ib-gateway-docker-headless/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/HMB-research/ib-gateway-docker-headless/actions/workflows/docker-publish.yml)
 
-IB Gateway + IbcAlpha + Xvfb on a Docker Container.
+https://hub.docker.com/repository/docker/industrialninja/ib_gateway
 
-Get it:
-```
-docker login -u $GITHUB_USERNAME -p $GITHUB_TOKEN docker.pkg.github.com
-docker pull docker.pkg.github.com/hmb-research/ib-gateway-docker-headless/ib-gateway:latest
-```
+IB Gateway + IbcAlpha + Xvfb on a Docker Container.
 
 Run it:
 ```

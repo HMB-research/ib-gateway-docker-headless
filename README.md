@@ -8,7 +8,7 @@ IB Gateway + IbcAlpha + Xvfb on a Docker Container.
 
 Run it:
 ```
-docker container run --env TWSUSERID='YOUR_IB_ACCOUNT' --env TWSPASSWORD="YOUR_IB_PASSWORD" --env TRADING_MODE=paper ib-gateway:latest
+docker container run --env TWS_USERID='YOUR_IB_ACCOUNT' --env TWS_PASSWORD="YOUR_IB_PASSWORD" --env TRADING_MODE=paper ib-gateway:latest
 ```
 
-let's try it
+or try with `docker-compose up` for quick setup

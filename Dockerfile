@@ -14,7 +14,7 @@ RUN ./ibgateway-latest-standalone-linux-x64.sh -q -dir /root/Jts/ibgateway/lates
 
 # Install IbcAlpha
 
-WORKDIR /opt/ibc
+WORKDIR /root/ibc
 RUN wget https://github.com/IbcAlpha/IBC/releases/download/3.8.7/IBCLinux-3.8.7.zip --no-check-certificate
 RUN unzip ./IBCLinux-3.8.7.zip -d .
 COPY ./config/ibc/* .
@@ -24,8 +24,8 @@ RUN rm ./IBCLinux-3.8.7.zip
 # IBC Alpha 
 ENV TWS_MAJOR_VRSN latest
 ENV TWS_PATH /root/Jts
-ENV IBC_PATH /opt/ibc
-ENV IBC_INI /opt/ibc/config.ini
+ENV IBC_PATH /root/ibc
+ENV IBC_INI /root/ibc/config.ini
 ENV TWOFA_TIMEOUT_ACTION exit
 
 # Install run script
